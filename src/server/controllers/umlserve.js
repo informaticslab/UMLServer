@@ -39,7 +39,7 @@ exports.getDefinitionsByAUI = function(req,res) {
 	//var sqlStm = 'SELECT * FROM case_main where development_status = ? and display_status = ?',[devStatus,displayStatus];
 	//console.log(sqlStm)
 	if(true){
-		connection.query('select cui, aui, atui, satui, sab, def, suppress, cvf  from mrdef where aui = ?',[aui],function(err,rows){
+		connection.query('select cui, aui, atui, satui, sab, def, suppress, cvf  from MRDEF where aui = ?',[aui],function(err,rows){
   		if(err) {
   			res.send(err);
   		} 
